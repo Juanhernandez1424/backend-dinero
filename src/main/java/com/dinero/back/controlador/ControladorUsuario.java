@@ -72,7 +72,6 @@ public class ControladorUsuario {
         try {
             Usuario usuarioCreado = service.guardar(usuario);
             Map<String, Object> response = new HashMap<>();
-            //response.put("idUsuario", usuarioCreado.getIdUsuario());
             response.put("nombre", usuarioCreado.getNombre());
             response.put("apellido", usuarioCreado.getApellido());
             response.put("tipoDocumento", usuarioCreado.getTipoDocumento());
